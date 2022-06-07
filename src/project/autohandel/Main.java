@@ -1,4 +1,4 @@
-package projectAutohandel;
+package project.autohandel;
 
 import java.util.Scanner;
 
@@ -36,7 +36,7 @@ public class Main {
 
         menuSelection = game.nextLine();
 
-        switch (menuSelection){
+        switch (menuSelection) {
             case "0":
                 System.out.println("Instrukcja gry:");
                 System.out.println("Używając klawiatury numerycznej wprowadzaj liczby zgodnie z legendą.");

@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9e8bfd9-baa2-4a91-9ad3-655795870918" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="e9e8bfd9-baa2-4a91-9ad3-655795870918" name="Changes" comment="Dodano case &quot;1&quot;">
+      <change afterPath="$PROJECT_DIR$/src/project/autohandel/Human.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/project/autohandel/Owner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AutoHandel_JS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AutoHandel_JS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projectAutohandel/Automobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projectAutohandel/Automobile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projectAutohandel/CarDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projectAutohandel/CarDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/projectAutohandel/Automobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project/autohandel/Automobile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/projectAutohandel/CarDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project/autohandel/CarDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/projectAutohandel/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project/autohandel/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,16 +39,16 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Jacek Szulc/Desktop/Kopie projektów/Mój projekt/2",
+    "last_opened_file_path": "C:/Users/Jacek Szulc/IdeaProjects/AutoHandel_JS",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.editor"
+    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog"
   }
 }]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="projectAutohandel.Main" />
+      <option name="MAIN_CLASS_NAME" value="project.autohandel.Main" />
       <module name="AutoHandel_JS" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -68,8 +65,18 @@
       <updated>1654531601614</updated>
       <workItem from="1654531603120" duration="18433000" />
       <workItem from="1654553058354" duration="250000" />
-      <workItem from="1654609530530" duration="310000" />
+      <workItem from="1654609530530" duration="1148000" />
+      <workItem from="1654623950102" duration="6457000" />
+      <workItem from="1654632265995" duration="1527000" />
     </task>
+    <task id="LOCAL-00001" summary="Dodano case &quot;1&quot;">
+      <created>1654610250717</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654610250717</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,5 +92,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Dodano case &quot;1&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dodano case &quot;1&quot;" />
   </component>
 </project>

@@ -1,4 +1,4 @@
-package projectAutohandel;
+package project.autohandel;
 
 public class Automobile {
 
