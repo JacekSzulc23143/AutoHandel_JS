@@ -8,7 +8,7 @@ public class Main {
         Scanner game = new Scanner(System.in);
         String menuSelection;
 
-        CarDatabase base = new CarDatabase();
+        CarDatabase base = new CarDatabase(5);
 
         System.out.println();
         System.out.println("**************************************");
@@ -49,6 +49,7 @@ public class Main {
                 System.out.println("--------------");
                 break;
             case "1":
+                base.presentationCarDatabase();
                 break;
             case "2":
                 break;

@@ -20,4 +20,17 @@ public class Automobile {
         this.segment = segment;
         this.yearOfProduction = yearOfProduction;
     }
+
+    @Override
+    public String toString() {
+        return "Automobile{" +
+                "value=" + value +
+                ", producer='" + producer + '\'' +
+                ", model='" + model + '\'' +
+                ", mileage=" + mileage +
+                ", color='" + color + '\'' +
+                ", segment='" + segment + '\'' +
+                ", yearOfProduction=" + yearOfProduction +
+                '}';
+    }
 }
