@@ -33,21 +33,13 @@ public class Action {
         System.out.println("[11] Sprawdź sumę kosztów napraw i mycia dla każdego z posiadanych pojazdów.");
         System.out.println("[12] Zakończ.");
         System.out.println("*------------------------------------*");
+        System.out.println("Wybierz liczbę z Menu Gry i zatwierdź przyciskiem (Enter).");
 
         actionChoice = scanner.nextLine();
 
         switch (actionChoice) {
             case "0":
-                System.out.println("--------------");
-                System.out.println("Instrukcja gry:");
-                System.out.println("Używając klawiatury numerycznej wprowadzaj liczby zgodnie z legendą [0 - 12].");
-                System.out.println("--------------");
-                System.out.println("Cel gry:");
-                System.out.println("Podwoić stan konta w jak najmniejszej liczbie ruchów. Jeden ruch to zakup " +
-                        "auta/sprzedaż auta/naprawienie jednego elementu/dodanie jednej reklamy. " +
-                        "Przeglądanie stanu konta, historii transakcji, baz klientów, posiadanych pojazdów i pojazdów " +
-                        "dostępnych do kupienia nie oznacza wykorzystania ruchu.");
-                System.out.println("--------------");
+                action_0();
                 break;
             case "1":
                 System.out.println("--------------");
@@ -81,5 +73,18 @@ public class Action {
         }
         System.out.println("Naciśnij enter.");
         scanner.nextLine();
+    }
+    void action_0(){
+        System.out.println("--------------");
+        System.out.println("Instrukcja gry:");
+        System.out.println("Używając klawiatury numerycznej wprowadź liczbę zgodnie z legendą [0 - 12].");
+        System.out.println("Wybór liczby zatwierdź przyciskiem (Enter).");
+        System.out.println("--------------");
+        System.out.println("Cel gry:");
+        System.out.println("Podwoić stan konta w jak najmniejszej liczbie ruchów. Jeden ruch to zakup " +
+                "auta/sprzedaż auta/naprawienie jednego elementu/dodanie jednej reklamy. " +
+                "Przeglądanie stanu konta, historii transakcji, baz klientów, posiadanych pojazdów i pojazdów " +
+                "dostępnych do kupienia nie oznacza wykorzystania ruchu.");
+        System.out.println("--------------");
     }
 }
