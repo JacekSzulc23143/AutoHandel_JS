@@ -15,21 +15,21 @@ public class CarDatabase {
     String[] colors = {"Niebieski", "Czerwony", "Zielony", "Czarny", "Srebrny", "Biały", "Żółty", "Szary"};
 
     // zakres
-    public CarDatabase(int extent){
+    public CarDatabase(int extent) {
         cars = new Automobile[extent];
-        for (int i = 0 ; i < cars.length ; i++) {
+        for (int i = 0; i < cars.length; i++) {
             cars[i] = carGenerator();
         }
     }
 
-    Automobile carGenerator(){
-        int randomProducer = (int)(Math.random() * (7)); // generowanie producenta auta
-        int randomModel = (int)((Math.random() * (4)) + 1); // generowanie modelu pojazdu
+    Automobile carGenerator() {
+        int randomProducer = (int) (Math.random() * (7)); // generowanie producenta auta
+        int randomModel = (int) ((Math.random() * (4)) + 1); // generowanie modelu pojazdu
         String producer = producersModels[randomProducer][0];
         String model = producersModels[randomProducer][randomModel];
-        int randomYearOfProduction = (int)(Math.random() * (20) + 2001); // losowany rok z zakresu 2001-2020
-        int randomMileage = (int)(Math.random() * (200000)); // losowany przebieg
-        int randomColor = (int)(Math.random() * (8)); // losowany kolor
+        int randomYearOfProduction = (int) (Math.random() * (20) + 2001); // losowany rok z zakresu 2001-2020
+        int randomMileage = (int) (Math.random() * (200000)); // losowany przebieg
+        int randomColor = (int) (Math.random() * (8)); // losowany kolor
         String segment = "";
         Double value = 0.0;
 
@@ -37,26 +37,26 @@ public class CarDatabase {
         if (producer == "Mercedes" || producer == "BMW" || producer == "Audi") {
             segment = "premium";
             value = 250000.0 - (Double.valueOf((2022 - randomYearOfProduction) * 5) * 1000);
-        } else if(producer == "Mazda" || producer == "Toyota") {
+        } else if (producer == "Mazda" || producer == "Toyota") {
             segment = "standard";
             value = 140000.0 - (Double.valueOf((2022 - randomYearOfProduction) * 5) * 1000);
-        } else if(producer == "VW" || producer == "Opel") {
+        } else if (producer == "VW" || producer == "Opel") {
             segment = "budget";
             value = 65000.0 - (Double.valueOf((2022 - randomYearOfProduction) * 5) * 1000);
         }
 
-        return new Automobile(value,producer,model,randomMileage,colors[randomColor],segment,randomYearOfProduction);
+        return new Automobile(value, producer, model, randomMileage, colors[randomColor], segment, randomYearOfProduction);
     }
 
-    public void presentationCarDatabase() {
+    public void presentationCarsDatabase() {
         System.out.println("Wykaz dostępnych samochodów:");
-        int i = 1;
-        for (Automobile car: cars) {
+        int i = 0;
+        for (Automobile car : cars) {
             if (car != null) {
                 System.out.println("(" + i + ") " + car.toString());
             }
             i++;
         }
-        System.out.println();
+        System.out.println("--------------");
     }
 }

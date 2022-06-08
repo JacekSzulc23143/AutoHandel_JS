@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9e8bfd9-baa2-4a91-9ad3-655795870918" name="Changes" comment="Dodano case &quot;1&quot;">
-      <change afterPath="$PROJECT_DIR$/src/project/autohandel/Human.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project/autohandel/Owner.java" afterDir="false" />
+    <list default="true" id="e9e8bfd9-baa2-4a91-9ad3-655795870918" name="Changes" comment="Dodano nowe Klasy">
+      <change afterPath="$PROJECT_DIR$/src/project/autohandel/Action.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projectAutohandel/Automobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project/autohandel/Automobile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projectAutohandel/CarDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project/autohandel/CarDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projectAutohandel/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project/autohandel/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project/autohandel/CarDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project/autohandel/CarDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project/autohandel/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project/autohandel/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,19 +31,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Jacek Szulc/IdeaProjects/AutoHandel_JS",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Jacek Szulc/Desktop/Kopie projektów/Próbny projekt&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="project.autohandel.Main" />
@@ -67,7 +65,11 @@
       <workItem from="1654553058354" duration="250000" />
       <workItem from="1654609530530" duration="1148000" />
       <workItem from="1654623950102" duration="6457000" />
-      <workItem from="1654632265995" duration="1527000" />
+      <workItem from="1654632265995" duration="2378000" />
+      <workItem from="1654635041563" duration="2264000" />
+      <workItem from="1654682409494" duration="159000" />
+      <workItem from="1654682579094" duration="1374000" />
+      <workItem from="1654686107450" duration="6310000" />
     </task>
     <task id="LOCAL-00001" summary="Dodano case &quot;1&quot;">
       <created>1654610250717</created>
@@ -76,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654610250717</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Dodano nowe Klasy">
+      <created>1654634108169</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654634108169</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +104,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Dodano case &quot;1&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dodano case &quot;1&quot;" />
+    <MESSAGE value="Dodano nowe Klasy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dodano nowe Klasy" />
   </component>
 </project>
