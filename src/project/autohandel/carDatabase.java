@@ -1,21 +1,21 @@
 package project.autohandel;
 
-public class CarDatabase {
+public class carDatabase {
 
     Automobile[] cars;
     String[][] producersModels = {
-            {"Mercedes", "Klasa A", "Klasa B", "Klasa C", "Klasa S"},
+            {"Mercedes", "Sprinter", "Klasa B", "Klasa C", "Klasa S"},
             {"BMW", "X1", "X3", "X4", "X5"},
             {"Audi", "e-tron", "A4", "A6", "Q8"},
             {"Mazda", "2", "3", "6", "CX-3"},
-            {"Toyota", "Supra", "Corolla", "Camry", "Hilux"},
-            {"VW", "Caddy", "Golf", "Bora", "Corrado"},
-            {"Opel", "Corsa", "Astra", "Insignia", "Mokka"},
+            {"Toyota", "Proace", "Corolla", "Camry", "Hilux"},
+            {"VW", "Crafter", "Golf", "Bora", "Corrado"},
+            {"Opel", "Corsa", "Astra", "Movano", "Mokka"},
     };
     String[] colors = {"Niebieski", "Czerwony", "Zielony", "Czarny", "Srebrny", "Biały", "Żółty", "Szary"};
 
     // zakres
-    public CarDatabase(int extent) {
+    public carDatabase(int extent) {
         cars = new Automobile[extent];
         for (int i = 0; i < cars.length; i++) {
             cars[i] = carGenerator();
@@ -49,7 +49,7 @@ public class CarDatabase {
     }
 
     public void presentationCarsDatabase() {
-        System.out.println("Wykaz dostępnych samochodów:");
+//        System.out.println("Wykaz dostępnych samochodów do kupienia:");
         int i = 0;
         for (Automobile car : cars) {
             if (car != null) {
@@ -58,5 +58,10 @@ public class CarDatabase {
             i++;
         }
         System.out.println("--------------");
+    }
+
+    // Umożliwia wybranie samochodu do zakupu po numerze porządkowym.
+    public Automobile getCar(int indicator) {
+        return cars[indicator];
     }
 }

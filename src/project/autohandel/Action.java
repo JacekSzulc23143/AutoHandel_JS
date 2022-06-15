@@ -7,16 +7,10 @@ public class Action {
     Scanner scanner = new Scanner(System.in);
     String actionChoice;
 
-
-    CarDatabase base = new CarDatabase(5);
+    Owner trader = new Owner("Zenek Szulc", 400000.0);
+    carDatabase base = new carDatabase(5);
 
     public void showAction() {
-        System.out.println("**************************************");
-        System.out.println("*     Autohandel u Złotego Zenka     *");
-        System.out.println("*           Gra tekstowa             *");
-        System.out.println("*            WSB 2022 r.             *");
-        System.out.println("*             ver. 1.0               *");
-        System.out.println("**************************************");
         System.out.println();
         System.out.println("*------------[ MENU GRY ]------------*\n");
         System.out.println("[0] Instrukcja i cel gry.");
@@ -42,10 +36,10 @@ public class Action {
                 action_0();
                 break;
             case "1":
-                System.out.println("--------------");
-                base.presentationCarsDatabase();
+                action_1();
                 break;
             case "2":
+                action_2();
                 break;
             case "3":
                 break;
@@ -78,13 +72,28 @@ public class Action {
         System.out.println("--------------");
         System.out.println("Instrukcja gry:");
         System.out.println("Używając klawiatury numerycznej wprowadź liczbę zgodnie z legendą [0 - 12].");
-        System.out.println("Wybór liczby zatwierdź przyciskiem (Enter).");
+        System.out.println("Wybór liczby zatwierdź przyciskiem \"Enter\".");
         System.out.println("--------------");
         System.out.println("Cel gry:");
         System.out.println("Podwoić stan konta w jak najmniejszej liczbie ruchów. Jeden ruch to zakup " +
                 "auta/sprzedaż auta/naprawienie jednego elementu/dodanie jednej reklamy. " +
                 "Przeglądanie stanu konta, historii transakcji, baz klientów, posiadanych pojazdów i pojazdów " +
                 "dostępnych do kupienia nie oznacza wykorzystania ruchu.");
+        System.out.println("--------------");
+    }
+    void action_1() {
+        System.out.println("--------------");
+        System.out.println("Baza samochodów do kupienia:");
+        base.presentationCarsDatabase();
+    }
+    void action_2() {
+        System.out.println("--------------");
+        System.out.println("Wykaz dostępnych samochodów do kupienia:");
+        base.presentationCarsDatabase();
+        System.out.println("Wprowadź numer porządkowy samochodu w celu zakupu:");
+        actionChoice = scanner.nextLine();
+        trader.buyCar(base.getCar(Integer.parseInt(actionChoice)));
+        base = new carDatabase(5);
         System.out.println("--------------");
     }
 }

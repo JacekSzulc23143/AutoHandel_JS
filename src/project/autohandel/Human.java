@@ -14,4 +14,7 @@ public class Human {
         this.name = name;
         this.cash = cash;
     }
+    public void subtractCash(Double cash){
+        this.cash -= cash;
+    }
 }
