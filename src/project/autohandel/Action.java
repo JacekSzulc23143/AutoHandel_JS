@@ -42,6 +42,7 @@ public class Action {
                 action_2();
                 break;
             case "3":
+                action_3();
                 break;
             case "4":
                 break;
@@ -85,15 +86,23 @@ public class Action {
         System.out.println("--------------");
         System.out.println("Baza samochodów do kupienia:");
         base.presentationCarsDatabase();
+        System.out.println("--------------");
     }
     void action_2() {
         System.out.println("--------------");
         System.out.println("Wykaz dostępnych samochodów do kupienia:");
         base.presentationCarsDatabase();
+        System.out.println("--------------");
         System.out.println("Wprowadź numer porządkowy samochodu w celu zakupu:");
         actionChoice = scanner.nextLine();
+        System.out.println("--------------");
         trader.buyCar(base.getCar(Integer.parseInt(actionChoice)));
         base = new carDatabase(5);
+        System.out.println("--------------");
+    }
+    void action_3() {
+        System.out.println("--------------");
+        trader.showCars();
         System.out.println("--------------");
     }
 }

@@ -25,14 +25,14 @@ public class Automobile {
 
     @Override
     public String toString() {
-        return "Automobile{" +
-                "value=" + value +
-                ", producer='" + producer + '\'' +
-                ", model='" + model + '\'' +
-                ", mileage=" + mileage +
-                ", color='" + color + '\'' +
-                ", segment='" + segment + '\'' +
-                ", yearOfProduction=" + yearOfProduction +
+        return "Samochód {" +
+                "Wartość: " + value +
+                ", Producent: '" + producer + '\'' +
+                ", Model: '" + model + '\'' +
+                ", Przebieg: " + mileage +
+                ", Kolor: '" + color + '\'' +
+                ", Segment: '" + segment + '\'' +
+                ", Rok produkcji: " + yearOfProduction +
                 '}';
     }
 

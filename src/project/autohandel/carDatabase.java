@@ -49,7 +49,6 @@ public class carDatabase {
     }
 
     public void presentationCarsDatabase() {
-//        System.out.println("Wykaz dostępnych samochodów do kupienia:");
         int i = 0;
         for (Automobile car : cars) {
             if (car != null) {
@@ -57,7 +56,7 @@ public class carDatabase {
             }
             i++;
         }
-        System.out.println("--------------");
+//        System.out.println();
     }
 
     // Umożliwia wybranie samochodu do zakupu po numerze porządkowym.

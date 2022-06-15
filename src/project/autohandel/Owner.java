@@ -12,13 +12,12 @@ public class Owner extends Human {
         super(name, cash);
     }
 
-    void addCar(Automobile car){
-        System.out.println("--------------");
+    void addCar(Automobile car) {
         cars.add(car);
         System.out.println("Dostarczyłeś do komisu samochód marki: " + car.basicCarInfo() + ".");
     }
 
-    public void buyCar(Automobile car){
+    public void buyCar(Automobile car) {
         if(cash >= car.value) {
             subtractCash(car.value);
             addCar(car);
@@ -29,6 +28,19 @@ public class Owner extends Human {
         }else{
             System.out.println("Brak pieniędzy, nie możesz kupić tego samochodu.");
         }
+    }
+
+    // Case "3".
+    public void showCars() {
+        System.out.println("Wykaz Twoich samochodów:");
+        int i = 0;
+        for (Automobile car: cars){
+            if (car != null ) {
+                System.out.println(i + ". " + car.toString());
+            }
+            i++;
+        }
+//        System.out.println();
     }
 
 }
