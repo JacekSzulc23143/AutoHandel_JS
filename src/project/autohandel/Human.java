@@ -14,7 +14,9 @@ public class Human {
         this.name = name;
         this.cash = cash;
     }
-    public void subtractCash(Double cash){
+
+    // Case "2". Umożliwia odejmowanie gotówki po zakupie, naprawie i umyciu samochodu.
+    public void subtractCash(Double cash) {
         this.cash -= cash;
     }
 }

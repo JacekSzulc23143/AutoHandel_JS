@@ -14,7 +14,7 @@ public class carDatabase {
     };
     String[] colors = {"Niebieski", "Czerwony", "Zielony", "Czarny", "Srebrny", "Biały", "Żółty", "Szary"};
 
-    // zakres
+    // Case "2". Zakres bazy danych samochodów.
     public carDatabase(int extent) {
         cars = new Automobile[extent];
         for (int i = 0; i < cars.length; i++) {
@@ -22,6 +22,7 @@ public class carDatabase {
         }
     }
 
+    // Case "1", "2" i "4". Generator samochodów.
     Automobile carGenerator() {
         int randomProducer = (int) (Math.random() * (7)); // generowanie producenta auta
         int randomModel = (int) ((Math.random() * (4)) + 1); // generowanie modelu pojazdu
@@ -32,22 +33,25 @@ public class carDatabase {
         int randomColor = (int) (Math.random() * (8)); // losowany kolor
         String segment = "";
         Double value = 0.0;
+        int randomDamagedPart = (int) (Math.random() * (6)); // losowanie uszkodzonej części samochodu
 
         // przeliczanie wartości
         if (producer == "Mercedes" || producer == "BMW" || producer == "Audi") {
             segment = "premium";
-            value = 250000.0 - (Double.valueOf((2022 - randomYearOfProduction) * 5) * 1000);
+            value = 250000.0 - (Double.valueOf((2022 - randomYearOfProduction) * 5) * 2000);
         } else if (producer == "Mazda" || producer == "Toyota") {
             segment = "standard";
-            value = 140000.0 - (Double.valueOf((2022 - randomYearOfProduction) * 5) * 1000);
+            value = 140000.0 - (Double.valueOf((2022 - randomYearOfProduction) * 4) * 1500);
         } else if (producer == "VW" || producer == "Opel") {
             segment = "budget";
-            value = 65000.0 - (Double.valueOf((2022 - randomYearOfProduction) * 5) * 1000);
+            value = 65000.0 - (Double.valueOf((2022 - randomYearOfProduction) * 3) * 1000);
         }
 
-        return new Automobile(value, producer, model, randomMileage, colors[randomColor], segment, randomYearOfProduction);
+        return new Automobile(value, producer, model, randomMileage, colors[randomColor], segment,
+                randomYearOfProduction, randomDamagedPart);
     }
 
+    // Case "1" i "2". Umożliwia wyświetlenie samochodów od "0" numeru porządkowego.
     public void presentationCarsDatabase() {
         int i = 0;
         for (Automobile car : cars) {
@@ -59,7 +63,7 @@ public class carDatabase {
 //        System.out.println();
     }
 
-    // Umożliwia wybranie samochodu do zakupu po numerze porządkowym.
+    // Case "2". Umożliwia wybranie samochodu do zakupu po numerze porządkowym.
     public Automobile getCar(int indicator) {
         return cars[indicator];
     }

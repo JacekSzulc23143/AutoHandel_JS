@@ -6,6 +6,8 @@ public class Action {
 
     Scanner scanner = new Scanner(System.in);
     String actionChoice;
+    String actionChoice2;
+    String actionChoice3;
 
     Owner trader = new Owner("Zenek Szulc", 400000.0);
     carDatabase base = new carDatabase(5);
@@ -45,6 +47,7 @@ public class Action {
                 action_3();
                 break;
             case "4":
+                action_4();
                 break;
             case "5":
                 break;
@@ -69,7 +72,8 @@ public class Action {
         System.out.println("Naciśnij enter.");
         scanner.nextLine();
     }
-    void action_0(){
+
+    void action_0() {
         System.out.println("--------------");
         System.out.println("Instrukcja gry:");
         System.out.println("Używając klawiatury numerycznej wprowadź liczbę zgodnie z legendą [0 - 12].");
@@ -82,12 +86,14 @@ public class Action {
                 "dostępnych do kupienia nie oznacza wykorzystania ruchu.");
         System.out.println("--------------");
     }
+
     void action_1() {
         System.out.println("--------------");
         System.out.println("Baza samochodów do kupienia:");
         base.presentationCarsDatabase();
         System.out.println("--------------");
     }
+
     void action_2() {
         System.out.println("--------------");
         System.out.println("Wykaz dostępnych samochodów do kupienia:");
@@ -100,9 +106,22 @@ public class Action {
         base = new carDatabase(5);
         System.out.println("--------------");
     }
+
     void action_3() {
         System.out.println("--------------");
         trader.showCars();
         System.out.println("--------------");
+    }
+
+    void action_4() {
+        trader.showCars();
+        System.out.println("Podaj numer porządkowy samochodu który chcesz naprawić:");
+        actionChoice = scanner.nextLine();
+        System.out.println("Wpisz część którą chcesz naprawić (true oznacza uszkodzenie) [Hamulce, Skrzynia biegów, Silnik, Karoseria, " +
+                "Zawieszenie]:");
+        actionChoice2 = scanner.nextLine();
+        System.out.println("Wpisz imię mechanika którego wybierasz [Janusz, Marian, Adrian]:");
+        actionChoice3 = scanner.nextLine();
+        trader.getCar(Integer.parseInt(actionChoice)).repairPart(actionChoice2, actionChoice3);
     }
 }
