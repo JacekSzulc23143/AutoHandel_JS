@@ -10,7 +10,9 @@ public class Action {
     String actionChoice3;
 
     Owner trader = new Owner("Zenek Szulc", 400000.0);
-    carDatabase base = new carDatabase(5);
+    carDatabase carDatabase = new carDatabase(5);
+    ClientDatabase clientDatabase = new ClientDatabase(5);
+
 
     public void showAction() {
         System.out.println();
@@ -50,6 +52,7 @@ public class Action {
                 action_4();
                 break;
             case "5":
+                action_5();
                 break;
             case "6":
                 break;
@@ -90,20 +93,20 @@ public class Action {
     void action_1() {
         System.out.println("--------------");
         System.out.println("Baza samochodów do kupienia:");
-        base.presentationCarsDatabase();
+        carDatabase.presentationCarsDatabase();
         System.out.println("--------------");
     }
 
     void action_2() {
         System.out.println("--------------");
         System.out.println("Wykaz dostępnych samochodów do kupienia:");
-        base.presentationCarsDatabase();
+        carDatabase.presentationCarsDatabase();
         System.out.println("--------------");
         System.out.println("Wprowadź numer porządkowy samochodu w celu zakupu:");
         actionChoice = scanner.nextLine();
         System.out.println("--------------");
-        trader.buyCar(base.getCar(Integer.parseInt(actionChoice)));
-        base = new carDatabase(5);
+        trader.buyCar(carDatabase.getCar(Integer.parseInt(actionChoice)));
+        carDatabase = new carDatabase(5);
         System.out.println("--------------");
     }
 
@@ -123,5 +126,11 @@ public class Action {
         System.out.println("Wpisz imię mechanika którego wybierasz [Janusz, Marian, Adrian]:");
         actionChoice3 = scanner.nextLine();
         trader.getCar(Integer.parseInt(actionChoice)).repairPart(actionChoice2, actionChoice3);
+    }
+    void action_5() {
+        System.out.println("--------------");
+        System.out.println("Baza potencjalnych klientów: ");
+        clientDatabase.presentationClientsDatabase();
+        System.out.println("--------------");
     }
 }

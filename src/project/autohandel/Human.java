@@ -19,4 +19,15 @@ public class Human {
     public void subtractCash(Double cash) {
         this.cash -= cash;
     }
+
+    // Case "5". Umożliwia pokazanie ilości pieniędzy klienta.
+    public Double getCash() {
+        return cash;
+    }
+
+    // Case "5". Umożliwia pokazanie imienia i nazwiska klienta.
+    @Override
+    public String toString() {
+        return name;
+    }
 }
