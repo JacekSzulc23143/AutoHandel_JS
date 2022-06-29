@@ -8,6 +8,7 @@ public class Action {
     String actionChoice;
     String actionChoice2;
     String actionChoice3;
+    int numberOfBuyers;
 
     Owner trader = new Owner("Zenek Szulc", 400000.0);
     carDatabase carDatabase = new carDatabase(5);
@@ -55,6 +56,7 @@ public class Action {
                 action_5();
                 break;
             case "6":
+                action_6();
                 break;
             case "7":
                 break;
@@ -120,17 +122,35 @@ public class Action {
         trader.showCars();
         System.out.println("Podaj numer porządkowy samochodu który chcesz naprawić:");
         actionChoice = scanner.nextLine();
-        System.out.println("Wpisz część którą chcesz naprawić (true oznacza uszkodzenie) [Hamulce, Skrzynia biegów, Silnik, Karoseria, " +
-                "Zawieszenie]:");
+        System.out.println("Wpisz część którą chcesz naprawić (true oznacza uszkodzenie) [Hamulce, Zawieszenie, " +
+                "Silnik, Karoseria, Skrzynia biegów]:");
         actionChoice2 = scanner.nextLine();
+        System.out.println("Mechanicy do wyboru:");
+        System.out.println("Janusz - ma najdroższe ceny ale 100% gwarancję.");
+        System.out.println("Marian - bierze zdecydowanie mniej niż Janusz, ale masz 10% szans, że nie uda mu się naprawić samochodu i konieczna będzie interwencja Janusza.");
+        System.out.println("Adrian - jest najtańszy, ale masz 20% szans, że nie uda mu się naprawić i 2% szans, że zepsuje coś innego podczas naprawy.");
         System.out.println("Wpisz imię mechanika którego wybierasz [Janusz, Marian, Adrian]:");
         actionChoice3 = scanner.nextLine();
         trader.getCar(Integer.parseInt(actionChoice)).repairPart(actionChoice2, actionChoice3);
     }
+
     void action_5() {
         System.out.println("--------------");
-        System.out.println("Baza potencjalnych klientów: ");
+        System.out.println("Baza potencjalnych klientów:");
         clientDatabase.presentationClientsDatabase();
         System.out.println("--------------");
+    }
+
+    void action_6() {
+        trader.showCars();
+        System.out.println("Podaj numer porządkowy samochodu który chcesz sprzedać:");
+        actionChoice = scanner.nextLine();
+        System.out.println("Lista klientów zainteresowanych kupnem samochodu:");
+        clientDatabase.presentationClientsDatabase();
+        System.out.println("Podaj numer porządkowy kupującego:");
+        actionChoice2 = scanner.nextLine();
+        System.out.println("Wpisz kwotę sprzedaży samochodu:");
+        actionChoice3 = scanner.nextLine();
+        trader.sellCar(trader.getCar(Integer.parseInt(actionChoice)), clientDatabase.getClient(Integer.parseInt(actionChoice2)), Double.parseDouble(actionChoice3));
     }
 }

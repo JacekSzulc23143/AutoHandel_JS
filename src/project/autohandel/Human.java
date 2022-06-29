@@ -20,14 +20,19 @@ public class Human {
         this.cash -= cash;
     }
 
-    // Case "5". Umożliwia pokazanie ilości pieniędzy klienta.
+    // Case "5" i "6". Umożliwia pokazanie ilości pieniędzy klienta.
     public Double getCash() {
         return cash;
     }
 
-    // Case "5". Umożliwia pokazanie imienia i nazwiska klienta.
+    // Case "5" i "6". Umożliwia pokazanie imienia i nazwiska klienta.
     @Override
     public String toString() {
         return name;
+    }
+
+    // Case "6". Umożliwia dodanie gotówki po sprzedaży samochodu.
+    public void addCash(Double cash) {
+        this.cash = getCash() + cash;
     }
 }

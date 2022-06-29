@@ -33,7 +33,7 @@ public class carDatabase {
         int randomColor = (int) (Math.random() * (8)); // losowany kolor
         String segment = "";
         Double value = 0.0;
-        int randomDamagedPart = (int) (Math.random() * (6)); // losowanie uszkodzonej części samochodu
+        int randomDamagedPart = (int) (Math.random() * (5)); // losowanie uszkodzonej części samochodu
 
         // przeliczanie wartości
         if (producer == "Mercedes" || producer == "BMW" || producer == "Audi") {

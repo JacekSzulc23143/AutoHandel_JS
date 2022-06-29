@@ -36,7 +36,7 @@ public class ClientDatabase {
         return new Human(name, randomCash);
     }
 
-    // Case "5". Umożliwia wyświetlenie klientów od "0" numeru porządkowego.
+    // Case "5" i "6". Umożliwia wyświetlenie klientów od "0" numeru porządkowego.
     public void presentationClientsDatabase() {
         int i = 0;
         for (Human client : clients) {
@@ -46,5 +46,10 @@ public class ClientDatabase {
             i++;
         }
 //        System.out.println();
+    }
+
+    // Case "6". Zakres bazy danych klientów.
+    public Human getClient(int extent) {
+        return clients[extent];
     }
 }

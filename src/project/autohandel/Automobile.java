@@ -28,19 +28,19 @@ public class Automobile {
         this.yearOfProduction = yearOfProduction;
         // case"4". Cyfra (1-5) odpowiada za uszkodzenie danej części samochodu.
         switch (damagedPart){
-            case 1:
+            case 0:
                 breaks = true;
                 break;
-            case 2:
+            case 1:
                 suspension = true;
                 break;
-            case 3:
+            case 2:
                 engine = true;
                 break;
-            case 4:
+            case 3:
                 body = true;
                 break;
-            case 5:
+            case 4:
                 transmission = true;
                 break;
         }
@@ -138,13 +138,11 @@ public class Automobile {
         int probability;
         switch (mechanic) {
             case "Janusz":
-                System.out.println("Janusz - ma najdroższe ceny ale 100% gwarancję.");
                 isSuccess = true;
                 owner.subtractCash(3500.0);
                 repairCosts += 3500.0;
                 break;
             case "Marian":
-                System.out.println("Marian - bierze zdecydowanie mniej niż Janusz, ale masz 10% szans, że nie uda mu się naprawić samochodu i konieczna będzie interwencja Janusza.");
                 probability = (int) (Math.random() * (10));
                 if (probability == 1) {
                     System.out.println("Marian nie stanął na wysokości zadania, zleć naprawę innemu mechanikowi.");
@@ -160,7 +158,6 @@ public class Automobile {
                 }
                 break;
             case "Adrian":
-                System.out.println("Adrian - jest najtańszy, ale masz 20% szans, że nie uda mu się naprawić i 2% szans, że zepsuje coś innego podczas naprawy.");
                 probability = (int) (Math.random() * (5));
                 if (probability == 1) {
                     System.out.println("Ardian nie stanął na wysokości zadania, zleć naprawę innemu mechanikowi.");

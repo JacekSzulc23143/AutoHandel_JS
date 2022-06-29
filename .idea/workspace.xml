@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9e8bfd9-baa2-4a91-9ad3-655795870918" name="Changes" comment="Dodano case &quot;4&quot; + poprawki.">
-      <change afterPath="$PROJECT_DIR$/src/project/autohandel/ClientDatabase.java" afterDir="false" />
+    <list default="true" id="e9e8bfd9-baa2-4a91-9ad3-655795870918" name="Changes" comment="Dodano case &quot;5&quot;, dodano klasę ClientDatabase + poprawki.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/project/autohandel/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project/autohandel/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project/autohandel/Automobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project/autohandel/Automobile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project/autohandel/ClientDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project/autohandel/ClientDatabase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/project/autohandel/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project/autohandel/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project/autohandel/Owner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project/autohandel/Owner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project/autohandel/carDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project/autohandel/carDatabase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -96,7 +102,10 @@
       <workItem from="1655890455662" duration="10000" />
       <workItem from="1655890547785" duration="1154000" />
       <workItem from="1655891883025" duration="13000" />
-      <workItem from="1655896665752" duration="4701000" />
+      <workItem from="1655896665752" duration="5698000" />
+      <workItem from="1655918354476" duration="6000" />
+      <workItem from="1656431318241" duration="3807000" />
+      <workItem from="1656495640778" duration="3277000" />
     </task>
     <task id="LOCAL-00001" summary="Dodano case &quot;1&quot;">
       <created>1654610250717</created>
@@ -147,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655754301627</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Dodano case &quot;5&quot;, dodano klasę ClientDatabase + poprawki.">
+      <created>1655902856658</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1655902856658</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +188,8 @@
     <MESSAGE value="Edycja case &quot;1&quot;, dodano case &quot;2&quot;, dodano klasę Transaction + poprawki." />
     <MESSAGE value="Dodano case &quot;3&quot; + poprawki." />
     <MESSAGE value="Dodano case &quot;4&quot; + poprawki." />
-    <option name="LAST_COMMIT_MESSAGE" value="Dodano case &quot;4&quot; + poprawki." />
+    <MESSAGE value="Dodano case &quot;5&quot;, dodano klasę ClientDatabase + poprawki." />
+    <option name="LAST_COMMIT_MESSAGE" value="Dodano case &quot;5&quot;, dodano klasę ClientDatabase + poprawki." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AutoHandel_JS$Main.ic" NAME="Main Coverage Results" MODIFIED="1654779921353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

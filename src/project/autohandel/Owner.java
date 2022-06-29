@@ -32,7 +32,7 @@ public class Owner extends Human {
         }
     }
 
-    // Case "3" i "4". Umożliwia wyświetlenie wykazu posiadanych samochodów.
+    // Case "3", "4" i "6". Umożliwia wyświetlenie wykazu posiadanych samochodów.
     public void showCars() {
         System.out.println("Wykaz Twoich samochodów:");
         int i = 0;
@@ -45,8 +45,20 @@ public class Owner extends Human {
 //        System.out.println();
     }
 
-    // Case "4". Umożliwia wybranie samochodu do naprawy po numerze porządkowym.
+    // Case "4" i "6". Umożliwia wybranie samochodu do naprawy i sprzedaży po numerze porządkowym.
     public Automobile getCar(int carIndicator) {
         return cars.get(carIndicator);
+    }
+
+    // Case "6". Umożliwia sprzedaż samochodu.
+    public void sellCar(Automobile car, Human buyer, Double price) {
+        if (buyer.getCash() >= price) {
+            cars.remove(car);
+            System.out.println("Sprzedano samochód " + car.basicCarInfo() + " za kwotę " + price);
+            addCash(price);
+            System.out.println("Kupujący/a " + buyer.toString() + " stał/a się właścicielem samochodu.");
+        } else {
+            System.out.println("Kupujący nie ma wystarczająco ilości pieniędzy.");
+        }
     }
 }
